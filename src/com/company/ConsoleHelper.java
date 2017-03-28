@@ -1,0 +1,19 @@
+package com.company;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * Created by Unix on 3/24/17.
+ */
+public class ConsoleHelper {
+    private static final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+    public static void writeMessage(String message){
+        System.out.println(message);
+    }
+    public static String readLine() throws IOException {
+        return bufferedReader.readLine();
+    }
+}
